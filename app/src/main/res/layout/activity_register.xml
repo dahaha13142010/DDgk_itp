@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/acl_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".app.activity_login_etc.RegistActivity2">
+
+    <com.admin.control.topTitleBackBar.TopTitleBackBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:headerBackground="@color/acl_title"
+        app:headerLeftTitle="@string/back"
+        app:headerRightImageVisibility="gone"
+        app:headerTitle="@string/regist" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_30"
+                android:background="@color/acl_title"
+                android:padding="@dimen/dip_12">
+
+                <ImageView
+                    android:id="@+id/iv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/account_phone" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:background="@null"
+                    android:hint="@string/hint_name"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hint_et"
+                    android:textSize="@dimen/sp_15" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@id/et_name"
+                    android:layout_alignRight="@id/et_name"
+                    android:layout_below="@id/et_name"
+                    android:background="@color/acl_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/acl_title"
+                android:padding="@dimen/dip_12">
+
+                <ImageView
+                    android:id="@+id/iv_sfz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/sfz" />
+
+                <EditText
+                    android:id="@+id/et_sfz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_toRightOf="@id/iv_sfz"
+                    android:background="@null"
+                    android:hint="@string/hint_sfz"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hint_et"
+                    android:textSize="@dimen/sp_15" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@id/et_sfz"
+                    android:layout_alignRight="@id/et_sfz"
+                    android:layout_below="@id/et_sfz"
+                    android:background="@color/acl_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/acl_title"
+                android:padding="@dimen/dip_12">
+
+                <ImageView
+                    android:id="@+id/iv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/phone" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_toRightOf="@id/iv_phone"
+                    android:background="@null"
+                    android:hint="@string/hint_phone"
+                    android:inputType="phone"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hint_et"
+                    android:textSize="@dimen/sp_15" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@id/et_phone"
+                    android:layout_alignRight="@id/et_phone"
+                    android:layout_below="@id/et_phone"
+                    android:background="@color/acl_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/acl_title"
+                android:padding="@dimen/dip_12">
+
+                <ImageView
+                    android:id="@+id/iv_yzm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/yzm" />
+
+                <Button
+                    android:id="@+id/btn_get_yzm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_get_yzm_sel"
+                    android:text="@string/get_yzm"
+                    android:textColor="@color/cl_get_yzm_sel"
+                    android:textSize="@dimen/sp_12" />
+
+                <EditText
+                    android:id="@+id/et_yzm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_toLeftOf="@id/btn_get_yzm"
+                    android:layout_toRightOf="@id/iv_yzm"
+                    android:background="@null"
+                    android:hint="@string/hint_yzm"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hint_et"
+                    android:textSize="@dimen/sp_15" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@id/et_yzm"
+                    android:layout_alignRight="@id/btn_get_yzm"
+                    android:layout_below="@id/et_yzm"
+                    android:background="@color/acl_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/acl_title"
+                android:padding="@dimen/dip_12">
+
+                <ImageView
+                    android:id="@+id/iv_referrer_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/phone" />
+
+                <EditText
+                    android:id="@+id/et_referrer_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_toRightOf="@id/iv_referrer_phone"
+                    android:background="@null"
+                    android:hint="@string/hint_referrer_phone"
+                    android:inputType="phone"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hint_et"
+                    android:textSize="@dimen/sp_15" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@id/et_referrer_phone"
+                    android:layout_alignRight="@id/et_referrer_phone"
+                    android:layout_below="@id/et_referrer_phone"
+                    android:background="@color/acl_line" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_30"
+                android:padding="@dimen/dip_12">
+
+                <ImageView
+                    android:id="@+id/iv_referrer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/account_phone" />
+
+                <EditText
+                    android:id="@+id/et_referrer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:background="@null"
+                    android:hint="@string/hint_referrer_name"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hint_et"
+                    android:textSize="@dimen/sp_15" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@id/et_referrer_name"
+                    android:layout_alignRight="@id/et_referrer_name"
+                    android:layout_below="@id/et_referrer_name"
+                    android:background="@color/acl_line" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/acl_title"
+                android:padding="@dimen/dip_12">
+
+                <ImageView
+                    android:id="@+id/iv_bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/bank" />
+
+                <EditText
+                    android:id="@+id/et_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_toRightOf="@id/iv_bank"
+                    android:background="@null"
+                    android:hint="@string/hint_bank"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hint_et"
+                    android:textSize="@dimen/sp_15" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@id/et_bank"
+                    android:layout_alignRight="@id/et_bank"
+                    android:layout_below="@id/et_bank"
+                    android:background="@color/acl_line" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/acl_title"
+                android:padding="@dimen/dip_12">
+
+                <ImageView
+                    android:id="@+id/iv_bank_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/bank_account" />
+
+                <EditText
+                    android:id="@+id/et_bank_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_toRightOf="@id/iv_bank_account"
+                    android:background="@null"
+                    android:hint="@string/hint_bank_account"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hint_et"
+                    android:textSize="@dimen/sp_15" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@id/et_bank_account"
+                    android:layout_alignRight="@id/et_bank_account"
+                    android:layout_below="@id/et_bank_account"
+                    android:background="@color/acl_line" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_31"
+                android:background="@drawable/lg_btn_login_sel"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_15" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

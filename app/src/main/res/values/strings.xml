@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DDgk_itp</string>
+    <string name="hint_account">输入手机号/账号</string>
+    <string name="hint_pwd">输入登录密码</string>
+    <string name="get_yzm">获取验证码</string>
+    <string name="hint_yzm">输入手机验证码</string>
+    <string name="login">登录</string>
+    <string name="free_regist">免费注册</string>
+    <string name="back">返回</string>
+    <string name="hint_sfz">身份证号</string>
+    <string name="hint_phone">手机号码（即以后的账号）</string>
+    <string name="hint_referrer_phone">推荐人手机号</string>
+    <string name="hint_name">姓名</string>
+    <string name="hint_referrer_name">推荐人姓名</string>
+    <string name="hint_bank">开户行</string>
+    <string name="hint_bank_account">银行账号</string>
+    <string name="next">下一步</string>
+    <string name="regist">注册</string>
+    <string name="login_pwd">登录密码</string>
+    <string name="hint_set_pwd">设置登录密码（有字幕和数字组成最少六位）</string>
+    <string name="hint_pwd_confirm">再次确认登录密码</string>
+    <string name="set_pay_pwd">设置六位数支付密码</string>
+    <string name="complete">完成</string>
+</resources>

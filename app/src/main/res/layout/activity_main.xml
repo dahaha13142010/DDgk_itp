@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/acl_bg"
+    tools:context="com.ddgk.ddgk_itp.app.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/title"
+        android:layout_marginTop="@dimen/dip_3"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtn_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/dr_btn_homepage_sel"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:text="@string/homepage"
+            android:textColor="@drawable/cl_t_tab_sel"
+            android:padding="@dimen/dip_6"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_contacts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/dr_btn_contacts_sel"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:text="@string/contacts"
+            android:textColor="@drawable/cl_t_tab_sel" />
+
+        <RadioButton
+            android:id="@+id/rbtn_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/dr_btn_message_sel"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:text="@string/message"
+            android:textColor="@drawable/cl_t_tab_sel" />
+
+        <RadioButton
+            android:id="@+id/rbtn_center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/dr_btn_center_sel"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:text="@string/center"
+            android:textColor="@drawable/cl_t_tab_sel" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/radio_group"
+        tools:layout="@layout/fragment_home" />
+</RelativeLayout>

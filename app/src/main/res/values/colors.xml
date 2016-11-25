@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="acl_bg">#161616</color>
+    <color name="acl_title">#232323</color>
+    <color name="acl_line">#474747</color>
+    <color name="hint_et">#d0d0d0</color>
+    <color name="unable">#6d6d6d</color>
+    <color name="acl_regist">#f25c39</color>
+    <color name="acl_forget">#4286ff</color>
+
+</resources>
